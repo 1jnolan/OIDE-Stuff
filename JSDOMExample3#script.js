@@ -1,0 +1,23 @@
+let bodyElem = document.getElementById("body-id");
+
+//let h1Elem = document.createElement("h1");
+//h1Elem.textContent = "This is a level 1 heading!";
+//bodyElem.appendChild(h1Elem);
+
+let h1Elem = document.createElement("h1");
+var textNode = document.createTextNode("This is a level 1 heading!");
+h1Elem.appendChild(textNode);
+bodyElem.appendChild(h1Elem);
+
+let h2Elem = document.createElement("h2");
+h2Elem.textContent = "This is a level 2 heading!";
+bodyElem.appendChild(h2Elem);
+
+//let h4Elem = document.createElement("h4");
+//h4Elem.textContent = "This is a level 4 heading!";
+//bodyElem.appendChild(h4Elem);
+
+let h4Elem = document.createElement("h4");
+var textNode = document.createTextNode("This is a level 4 heading!");
+h4Elem.appendChild(textNode);
+bodyElem.appendChild(h4Elem);
