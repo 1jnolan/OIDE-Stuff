@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Example 1</title>
+  </head>  
+  <body id="body-id">
+
+    <button id="time" type="button">Click to see the current time</button>
+    <p id="demo">PLACEHOLDER</p>
+
+    <script>
+
+      // Attach a handler to the time button
+      const timeBtn = document.getElementById("time"); 
+      timeBtn.addEventListener("click", dispTime); 
+      // Task!
+      // Instead of using timeBtn.addEventListener("click", dispTime); to add a listener ....
+      // timeBtn.addEventListener("dblclick", dispTime);
+      // timeBtn.addEventListener("mousedown", dispTime);
+      // timeBtn.addEventListener("mouseover", dispTime);      
+
+      // Handler for time button
+      function dispTime() {
+          document.getElementById("demo").textContent = Date();
+      }
+      
+      
+    </script>
+  </body>
+</html>
